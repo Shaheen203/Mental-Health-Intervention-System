@@ -56,10 +56,6 @@ Clustering methods were used to group employees by mental health risk levels (Lo
 
 - K-Means, K-Means++
 - PAM (Partition Around Medoids)
-- Agglomerative Clustering
-- Spectral Clustering
-- Gaussian Mixture Models
-- BIRCH
 
 **Evaluation Metrics:**
 
