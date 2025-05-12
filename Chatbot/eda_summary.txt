@@ -1,0 +1,70 @@
+
+Mental Health EDA Key Insights:
+- Mental health surveys from 2017 to 2021 were analyzed, cleaned to ~1,100 rows.
+- Larger companies offer more mental health benefits.
+- Only ~26% of employees were aware of mental health support options.
+- Regional differences exist in mental health openness.
+- Formal discussions boost employee comfort levels.
+- Random Forest model achieved ~91% accuracy in predicting mental health diagnosis.
+Common signs of mental health challenges at work include persistent stress, irritability, low mood, difficulty concentrating, and withdrawal from coworkers.
+
+Employees can improve their mental well-being by practicing regular physical activity, maintaining a healthy sleep schedule, and seeking social support.
+
+Workplaces that promote open conversations around mental health see increased employee engagement, lower turnover, and improved productivity.
+
+Access to mental health resources like therapy, mental health days, and peer support groups significantly improves recovery outcomes.
+
+Managers can support employees by offering flexible schedules, promoting work-life balance, and checking in regularly without judgment.
+
+Common mental health disorders in the workplace include anxiety, depression, and burnout; early detection is key to effective treatment.
+
+Stress management techniques such as mindfulness, breathing exercises, and regular breaks during the workday help maintain emotional health.
+
+Companies offering Employee Assistance Programs (EAPs) provide confidential counseling services that employees can access without stigma.
+
+Employees should feel encouraged to set boundaries around work emails and meetings to protect their personal time and reduce stress.
+
+If an employee is struggling, HR teams can recommend professional help discreetly and offer reasonable accommodations as needed.
+
+Maintaining mental health awareness training for leadership helps foster a culture of understanding and respect across all organizational levels.
+
+During remote work, it's important to maintain virtual social connections and take regular digital detoxes to avoid isolation.
+
+Burnout can often be mistaken for laziness; recognizing it early can prevent long-term disengagement or mental health deterioration.
+
+A psychologically safe workplace is one where employees feel comfortable voicing concerns without fear of retaliation.
+
+Mental health advocacy reduces stigma and encourages people to seek the support they need without fear or shame.
+
+- Most respondents were aged 25–34.
+- 72% of employees were unaware of available mental health benefits.
+- Remote workers reported higher stress after COVID-19.
+- Random Forest gave the best predictive accuracy at 91%.
+- Only 38% had access to mental health policies at work.
+- The dataset used is from the OSMI Mental Health in Tech Survey, covering responses from 2017 to 2021.
+- A total of 3,202 participants contributed to the surveys across all years.
+- The most represented age group was 25–34 years, followed by 35–44 years.
+- 67% of participants identified as male, 29% as female, and 4% as other or prefer not to say.
+- Around 70% of employees were not aware of their company's mental health resources.
+- Only 35% of respondents reported that their employer provided mental health benefits.
+- 58% said they did not feel comfortable discussing mental health with their supervisor.
+- Post-COVID (2020–2021), remote workers reported increased levels of isolation and stress.
+- Respondents in the tech sector reported higher stress levels than those in non-tech roles.
+- A Random Forest model was trained on the data to predict mental health risk and achieved an accuracy of 91%.
+- Logistic Regression and XGBoost models were also evaluated but performed slightly worse than Random Forest.
+- The most important predictors in the model were work interference, family history, remote work status, age, and availability of mental health benefits.
+- Employees with access to mental health coverage were more likely to seek help when needed.
+- Managerial support was a strong predictor of whether employees felt comfortable discussing mental health at work.
+- People with a family history of mental illness had a higher likelihood of reporting mental health struggles.
+- The United States, Canada, and the United Kingdom accounted for over 80% of total survey responses.
+- Remote work was associated with lower levels of perceived employer support.
+- Respondents in small startups reported lower access to mental health policies compared to large corporations.
+- Younger employees (under 30) experienced higher levels of stress interference at work.
+- Most respondents preferred anonymity when discussing mental health issues.
+- Awareness of available resources was consistently low across all years of the survey.
+- The proportion of companies offering mental health leave increased slightly after COVID-19.
+- Participants who received mental health training were more likely to support their peers.
+- Companies with open mental health policies saw higher reported job satisfaction.
+- A significant portion of respondents were unsure whether their company had mental health policies.
+- Technical employees reported more frequent stress interference than non-technical staff.
+- The data showed an increase in positive perception of mental health in workplaces over the five-year period.
