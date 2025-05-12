@@ -82,7 +82,7 @@ This project not only predicts mental health diagnoses but also uncovers workpla
 
 
 Contributors:
-Sai Varun Nimmagadda
-Shaheen Chirakula
-Vishnu Vikas Nallamalli
+Sai Varun Nimmagadda,
+Shaheen Chirakula,
+Vishnu Vikas Nallamalli.
 ---
