@@ -80,4 +80,9 @@ Clustering methods were used to group employees by mental health risk levels (Lo
 
 This project not only predicts mental health diagnoses but also uncovers workplace patterns that contribute to mental health challenges. The insights can help tech organizations implement proactive mental health strategies.
 
+
+Contributors:
+Sai Varun Nimmagadda
+Shaheen Chirakula
+Vishnu Vikas Nallamalli
 ---
