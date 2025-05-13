@@ -83,7 +83,7 @@ This chatbot is an intelligent, locally deployed assistant designed to answer qu
 
 ## 📌 Conclusion
 
-This project not only predicts mental health diagnoses but also uncovers workplace patterns that contribute to mental health challenges. The insights can help tech organizations implement proactive mental health strategies.
+This project not only predicts mental health diagnoses but also uncovers workplace patterns that contribute to mental health challenges. The insights can help tech organizations implement proactive mental health strategies.Correspondingly, the chatbot answers questions about workplace mental health using insights from the OSMI survey. It uses sentence embeddings and FAISS to retrieve relevant responses. Ultimately it provides quick, supportive answers and promotes mental health awareness through an interactive, conversation-style experience.
 
 
 Contributors:
