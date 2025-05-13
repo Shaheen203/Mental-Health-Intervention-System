@@ -19,6 +19,7 @@ This project combines predictive modeling and clustering techniques to build a d
 4. **Predictive Modeling**
 5. **Risk Indicator Modeling (Clustering)**
 6. **Trend Analysis – Pre vs. Post COVID**
+7. **Chatbot - Mental health Recommendation and Risk Indication**
 
 ## 🔧 Preprocessing
 
@@ -75,6 +76,10 @@ Clustering methods were used to group employees by mental health risk levels (Lo
 - More formal discussions and support post-COVID
 - Increased mental health awareness
 - Greater work-from-home related stress factors
+
+### Chatbot - Mental Health Recommendations and Risk Indication
+
+This chatbot is an intelligent, locally deployed assistant designed to answer questions about workplace mental health based on insights from the OSMI Mental Health in Tech Survey (2017–2021). It uses a sentence embedding model (MiniLM-L6-v2) to convert both the user’s question and the EDA summary into vectors, allowing it to find and return the most semantically relevant responses. The vector store is built using FAISS, enabling fast and efficient similarity search. When a user asks a question, the chatbot retrieves the top-matching chunks from the summary and returns 1–2 clear, helpful insights. If no relevant match is found, it provides general supportive guidance. The chatbot can be run through a terminal interface or deployed as an interactive web app using Streamlit, preserving chat history and allowing continuous multi-question interaction. Overall, it transforms a static data analysis into an accessible, conversational tool for raising awareness about mental health in tech.
 
 ## 📌 Conclusion
 
