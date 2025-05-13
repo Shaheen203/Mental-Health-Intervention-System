@@ -3,9 +3,9 @@
 
 ## 📌 Introduction
 
-The tech industry has long been associated with fast-paced environments, high workloads, and burnout risks. This study explores the mental health landscape of tech professionals using survey data from the Open Sourcing Mental Illness (OSMI) organization, covering the years 2017 to 2021. The goal is not just to predict the likelihood of mental health diagnoses among employees, but also to identify key workplace and personal factors that influence well-being.
+Mental well-being has grown to be a more significant issue in today's workplace, particularly in the high-speed and demanding atmosphere of the tech sector. Workers frequently endure extended hours, solitude, exhaustion, and restricted availability of mental health services, all of which can greatly affect their wellness. This initiative examines mental health patterns in tech workers through survey data from Open Sourcing Mental Illness (OSMI) gathered from 2017 to 2021. The aim is to reveal trends in awareness, support, diagnosis, and risk factors over time, while also pinpointing the demographics most impacted by mental health issues.
 
-This project combines predictive modeling and clustering techniques to build a diagnostic model and a risk indicator. Additionally, a multi-year trend analysis is performed to examine shifts in mental health perceptions and support — particularly in response to COVID-19, which significantly altered work culture and stress factors globally.
+The project encompasses an entire data science pipeline—from data preprocessing and exploratory analysis to unsupervised clustering, risk classification, and supervised machine learning models. Moreover, a semantic chatbot was created to enable users to interactively ask for key insights from the data. This research seeks to inform employers, researchers, and policymakers about mental health in the tech industry by integrating statistical analysis with machine learning and NLP methods, offering practical recommendations for building healthier and more supportive work environments.
 
 ## 📊 Datasets
 
@@ -79,12 +79,23 @@ Clustering methods were used to group employees by mental health risk levels (Lo
 
 ### Chatbot - Mental Health Recommendations and Risk Indication
 
-This chatbot is an intelligent, locally deployed assistant designed to answer questions about workplace mental health based on insights from the OSMI Mental Health in Tech Survey (2017–2021). It uses a sentence embedding model (MiniLM-L6-v2) to convert both the user’s question and the EDA summary into vectors, allowing it to find and return the most semantically relevant responses. The vector store is built using FAISS, enabling fast and efficient similarity search. When a user asks a question, the chatbot retrieves the top-matching chunks from the summary and returns 1–2 clear, helpful insights. If no relevant match is found, it provides general supportive guidance. The chatbot can be run through a terminal interface or deployed as an interactive web app using Streamlit, preserving chat history and allowing continuous multi-question interaction. Overall, it transforms a static data analysis into an accessible, conversational tool for raising awareness about mental health in tech.
+This chatbot aims to respond to user inquiries by consulting findings from a mental health EDA (Exploratory Data Analysis) summary document. It starts by reading the content of eda_summary.txt and dividing it into clear, significant lines. Each line is subsequently transformed into a numerical vector with the help of a pre-trained HuggingFace sentence transformer model (all-MiniLM-L6-v2). These vectors are organized utilizing FAISS, a quick and effective similarity search tool, enabling the chatbot to comprehend semantically and look for related content.
+
+When a user asks a question, the chatbot conducts a similarity search in the FAISS index to locate the top 5 most pertinent text snippets from the EDA summary. It eliminates duplicate or excessively similar responses by employing fuzzy string matching (SequenceMatcher) and chooses a maximum of two varied and pertinent replies. If no significant matches are discovered, the chatbot provides a warm fallback response that suggests general mental health assistance. This design enables the chatbot to deliver succinct, human-like responses grounded in actual data insights, rendering it a useful partner for examining mental health trends and discoveries obtained from EDA
 
 ## 📌 Conclusion
 
-This project not only predicts mental health diagnoses but also uncovers workplace patterns that contribute to mental health challenges. The insights can help tech organizations implement proactive mental health strategies.Correspondingly, the chatbot answers questions about workplace mental health using insights from the OSMI survey. It uses sentence embeddings and FAISS to retrieve relevant responses. Ultimately it provides quick, supportive answers and promotes mental health awareness through an interactive, conversation-style experience.
+This initiative successfully integrates data science methods with actual mental health data to offer analytical insights and useful tools. By meticulously cleaning data, performing feature engineering, and applying encoding, a solid groundwork was established for in-depth analysis of trends and patterns in employee mental health over a span of five years. Clustering alongside a tailored risk scoring system provided clear insights into risk levels across various demographic categories, whereas predictive modeling delivered precise diagnosis forecasts through machine learning. The chatbot feature introduced an interactive dimension, enabling users to engage with results in a conversational manner through semantic search. Overall, the project emphasizes mental health issues within the tech sector while also offering a scalable, data-oriented strategy to enhance awareness, facilitate early detection, and promote better decision-making.
 
+## 📌Summary
+
+We started by exploring mental health survey data collected between 2017 and 2021 to understand key patterns—like how family history, remote work, and lack of support at work impact mental well-being. After analyzing the data, we summarized the most important insights in simple, easy-to-read text.
+
+Instead of letting that information sit in a report, we turned it into something interactive—a chatbot. Using HuggingFace models, we converted the summary into vector embeddings and stored them with FAISS so the chatbot could search and respond to questions in a smart, relevant way.
+
+We wrote logic to handle user questions, pick the most meaningful answers, and even offer general mental health tips if no direct match was found. Then, we built a clean, user-friendly web app using Streamlit so anyone could talk to the chatbot in real time.
+
+In the end, we turned complex data analysis into a helpful, human-like tool that makes mental health insights more accessible and supportive.
 
 Contributors:
 Sai Varun Nimmagadda,
